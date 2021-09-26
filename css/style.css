@@ -1,0 +1,45 @@
+html,
+body {
+    min-height: 90vh;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #222;
+}
+
+#gsTitle {
+    position: relative;
+    color: #fff;
+    font-size: 108px;
+    /* font-family: "oswald", sans-serif; */
+    font-family: "JetBrains Mono";
+}
+
+.gsTitle-title {
+    margin: 0;
+    white-space: nowrap;
+}
+
+.gsTitle-color {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    margin: -.05em 0 0 .05em;
+    color: dodgerblue;
+    mix-blend-mode: darken;
+    transition: .1s;
+    transition-property: opacity, margin;
+}
+
+.gsTitle-b {
+    margin: .05em 0 0 -.05em;
+    color: tomato;
+    mix-blend-mode: color-burn;
+}
+
+.gsTitle-glitched .gsTitle-color {
+    opacity: .4;
+}
